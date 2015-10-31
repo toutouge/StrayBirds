@@ -122,8 +122,8 @@ safe: false
 highlighter: pygments
 title: 请叫我头头哥
 description: 点塔七层,不如暗处一灯.
-theme: merlot
-disqusname: kunka
+theme: kunka
+disqusname: toutouge
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
 # those themes are all come from GitHub Pages Themes

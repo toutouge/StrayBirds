@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java 中的并发
+title: C#多线程
 category: 技术
 comments: true
 ---
@@ -8,10 +8,10 @@ comments: true
 
 ## 如何创建一个线程
 
-按 Java 语言规范中的说法，创建线程只有一种方式，就是创建一个 Thread 对象。而从 HotSpot 虚拟机的角度看，创建一个虚拟机线程
+按 C# 语言规范中的说法，创建线程只有一种方式，就是创建一个 Thread 对象。而从 HotSpot 虚拟机的角度看，创建一个虚拟机线程
 有两种方式，一种是创建 Thread 对象，另一种是创建 一个本地线程，加入到虚拟机线程中。
 
-如果从 Java 语法的角度。有两种方法。
+如果从 C# 语法的角度。有两种方法。
 
 第一是继承 Thread 类，实现 run 方法，并创建子类对象。
 
@@ -99,8 +99,6 @@ wait 会阻塞住，并释放已经得到的锁。一直到有人调用 notify �
 
 * Executors
 
-JDK 的 java.util.concurrent.Executors 类提供了几个静态的方法，用于创建不同类型的线程池。
-
 ```java
 ExecutorService service = Executors.newFixedThreadPool(10);
 ArrayList<Future<Integer>> results = new ArrayList<>();
@@ -120,8 +118,6 @@ for (int i = 0; i < 14; i++) {
 另外，还提供了 `newSingleThreadExecutor` 创建有一个工作线程的线程池。
 
 ### 原理 
-
-JDK 中的线程池通过 HashSet 存储工作者线程，通过 BlockingQueue 来存储待处理任务。
 
 通过核心工作者数目(corePoolSize) 和 最大工作者数目(maximumPoolSize) 来确定如何处理任务。如果当前工作者线程数目
 小于核心工作者数目，则创建一个工作者线程执行这个任务。否则，将这个任务放入待处理队列。如果入队失败，再看看当前工作

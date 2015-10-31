@@ -97,14 +97,14 @@ customLinks:
       url: http://user.qzone.qq.com/344097855?ptlang=2052
     - text: 百度经验
       url: http://jingyan.baidu.com/user/npublic?un=%E6%80%80%E6%97%A7%E5%85%88%E7%94%9Fbo
-    message: Friends
+    message: About me
   - item:
-    - text: Font Awesome
-      url: http://fortawesome.github.io/Font-Awesome/
-    - text: Google Font
-      url: http://www.google.com/fonts/
-    - text: jQuery
-      url: http://jquery.com/
+    - text: MSDN
+      url: https://msdn.microsoft.com/zh-cn/default.aspx
+    - text: Python
+      url: https://www.python.org/
+    - text: w3school
+      url: http://www.w3school.com.cn/html5/index.asp
     message: 其他相关链接
 
 #comment config

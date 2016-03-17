@@ -44,7 +44,7 @@ timezone:      null
 
 #Site config
 title: Jekyll Theme
-description: Just another Jekyll theme design and code by zhanxin.info.
+description: Just another Jekyll theme design and code by toutou.info.
 keywords: Jekyll Theme
 url: /StrayBirds
 feed: /atom.xml
@@ -116,7 +116,7 @@ disqus:
 #################################### global configure #######################################
 
 username: toutouge
-baseurl: /blog
+baseurl: 
 markdown: redcarpet
 safe: false
 highlighter: pygments
